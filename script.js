@@ -1,6 +1,5 @@
 const container = document.querySelector('#container');
 
-
 function makeGrid(size) {
     for (let i = 1; i <= size; i++) {
         const rowDiv = document.createElement('div')
@@ -21,7 +20,6 @@ function makeGrid(size) {
     }
 }
 
-
 const btn = document.querySelector('#btn-change-grid');
 btn.addEventListener('click', () => {
     let size = prompt('What do you want the grid size to be?');
@@ -39,3 +37,4 @@ btn.addEventListener('click', () => {
     }
 });
 
+makeGrid(16);
