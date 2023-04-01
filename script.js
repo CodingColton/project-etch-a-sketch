@@ -9,6 +9,9 @@ for (let row = 1; row <= 16; row++) {
     for (let i = 0; i < 16; i++) {
         const square = document.createElement('div');
         square.className = 'square';
+        square.addEventListener('mouseover', () => {
+            square.className = 'squareColor';
+        });
         document.querySelector('#row' + row).appendChild(square);
     }
 }

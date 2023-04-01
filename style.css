@@ -14,3 +14,9 @@
     border-color: black;
     flex: 1;
 }
+.squareColor {
+    border-style: solid;
+    border-color: black;
+    flex: 1;
+    background-color: black;
+}
