@@ -26,14 +26,10 @@ const btn = document.querySelector('#btn-change-grid');
 btn.addEventListener('click', () => {
     let size = prompt('What do you want the grid size to be?');
     if (size <= 100) {
-        let allSquares = document.querySelectorAll('.square,.squareColor');
-        for (let square = 0; square < allSquares.length; square++) {
-            allSquares[square].remove();
-        }
-        let allRows = document.getElementsByClassName('row');
-        for (let r = 0; r < allRows.length; r++) {
-            allRows[r].remove();
-        }
+        console.log("UNDER 100")
+        let allSquares = document.querySelectorAll('.square').forEach(e => e.remove());
+        let allColorSquares = document.querySelectorAll('.squareColor').forEach(e => e.remove());
+        let allRows = document.querySelectorAll('.row').forEach(e => e.remove());
         makeGrid(size);
     }
     else {
